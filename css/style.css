@@ -388,20 +388,28 @@ header{
 .pro-collage{
     background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 5em;
-}
-.pro-collage ul{
-    list-style: none;
     display: flex;
     display: -ms-flexbox;
     display: -webkit-box;
     flex-wrap: wrap;
 }
-.pro-collage ul li{
+.pro-collage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pro-collage .collage{
     width: 33.3%;
     height: 27vh;
     position: relative;
     overflow: hidden;
-    display: list-item;
+}
+
+.pro-collage .collage:hover .collage-item{
+    transform: scale(1.14);
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.14);
 }
 .pro-collage .collage-item{
     position: absolute;
@@ -412,18 +420,9 @@ header{
     transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
-.pro-collage img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.pro-collage ul li:hover .collage-item{
-    transform: scale(1.14);
-    -ms-transform: scale(1.4);
-    -webkit-transform: scale(1.14);
-}
-.pro-collage ul li a.colorbox{
+
+.pro-collage .collage a.colorbox{
     display: block;
     position: absolute;
     top: 0;
@@ -437,7 +436,7 @@ header{
     -webkit-transition: all 150ms ease-out;
     transform: scale(0.2);
 }
-.pro-collage ul li:hover a.colorbox{
+.pro-collage .collage:hover a.colorbox{
     transform: scale(0.6);
     opacity: 1;
 }
@@ -584,14 +583,14 @@ header{
 
     }
     .pro-collage{
-        width: 77%;
-        margin-top: 4rem;
-        margin: 0 1rem 5rem 12rem;
-        
-    }
-    .pro-collage ul li{
-        height: 200px;   
-    }
+    width: 77%;
+    margin-top: 4rem;
+    margin: 0 1rem 5rem 12rem;
+    
+   }
+   .pro-collage .collage-item{
+    height: 200px;   
+   }
     #sec-about{
         margin-top: -20px;
         padding-left: 12rem;
@@ -626,14 +625,14 @@ header{
         width: 91%;
     }
     .pro-collage{
-        margin: 0 1rem 5rem 15rem;
-        width: 75%;
-        
-    }
-    .pro-collage ul li{
-        height: 200px;
-        
-    }
+    margin: 0 1rem 5rem 15rem;
+    width: 75%;
+    
+   }
+   .pro-collage .collage-item{
+    height: 200px;
+    
+   }
     #sec-about{
         padding-left: 15rem;
         flex-direction: row;
