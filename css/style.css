@@ -355,9 +355,8 @@ header{
 
 #sec-work{
     padding: 1rem 0 5rem 1.8rem;
+    width: 95%;
     position: relative;
-
-
 }
 #sec-header{
     font-size: 2rem;
@@ -385,62 +384,6 @@ header{
     margin-right: 1.5%;
 }
 
-.pro-collage{
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-bottom: 5em;
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    flex-wrap: wrap;
-}
-.pro-collage img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.pro-collage .collage{
-    width: 33.3%;
-    height: 27vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.pro-collage .collage:hover .collage-item{
-    transform: scale(1.14);
-    -ms-transform: scale(1.4);
-    -webkit-transform: scale(1.14);
-}
-.pro-collage .collage-item{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
-}
-
-
-.pro-collage .collage a.colorbox{
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../images/circle2.png) no-repeat center;
-    opacity: 0;
-    transition: all 150ms ease-out;
-    -o-transition: all 150ms ease-out;
-    -webkit-transition: all 150ms ease-out;
-    transform: scale(0.2);
-}
-.pro-collage .collage:hover a.colorbox{
-    transform: scale(0.6);
-    opacity: 1;
-}
-
 
 #sec-about{
     padding: 0 0 5rem 1.8rem;
@@ -450,12 +393,14 @@ header{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 90.5%;
+    width: 95%;
+  
 }
 .text-zone3 p{
     margin-bottom: 15px;
     line-height: 1.5rem;
 }
+
 
 
 
@@ -582,15 +527,6 @@ header{
         right: 0;
 
     }
-    .pro-collage{
-    width: 77%;
-    margin-top: 4rem;
-    margin: 0 1rem 5rem 12rem;
-    
-   }
-   .pro-collage .collage-item{
-    height: 200px;   
-   }
     #sec-about{
         margin-top: -20px;
         padding-left: 12rem;
@@ -624,15 +560,7 @@ header{
         padding-left: 15rem;
         width: 91%;
     }
-    .pro-collage{
-    margin: 0 1rem 5rem 15rem;
-    width: 75%;
     
-   }
-   .pro-collage .collage-item{
-    height: 200px;
-    
-   }
     #sec-about{
         padding-left: 15rem;
         flex-direction: row;
