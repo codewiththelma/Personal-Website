@@ -207,8 +207,8 @@ header{
 .text-zone h1::after{
     content: '</h1>';
     position: absolute;
-    left: 26em;
-    padding-top: .7em;
+    right: 1.5em;
+    padding-top: 2.5em;
     font-size: 1rem;
     font-family: 'La Belle Aurore', cursive;
     color: #666565;
@@ -315,42 +315,6 @@ header{
 .contact-button:hover span.text{
     color: #1d1d1d;
 }
-.scroll-down{
-    position: absolute;
-    right: -20px;
-    bottom: 3.3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(90deg);
-    display: block;
-    font-size: 14px;
-}
-.scroll-down--left{
-    left: -30px;
-    right: auto;
-}
-.scroll-down span{
-    display: inline-block;
-    animation: scroll .5s linear infinite alternate-reverse;
-}
-@keyframes scroll{
-    0%{
-        transform: translateX(-7px);
-
-    }
-    100%{
-        transform: translateX(7px);
-        
-    }
-}
-.scroll-down .fas{
-    transform: rotate(270deg);
-    margin-left: 10px;
-}
-
-
 
 
 #sec-work{
@@ -406,6 +370,10 @@ header{
 
 /*Media Query*/
 @media screen and (min-width: 900px) {
+    #myCanvas{
+    width: 450px;
+    height: auto;
+    }
     header{
         justify-content: flex-end;
     }
@@ -462,13 +430,6 @@ header{
         letter-spacing: 1px;
         font-size: 20px;
     }
-    .scroll-down{
-        right: -30px;
-        bottom: 3.3rem;
-    }.scroll-down--left{
-        left: 110px;
-        right: auto;
-    }
     .text-zone::before{
         left: 155px;
         top: 30px;
@@ -496,10 +457,7 @@ header{
     .text-zone p::after{
         padding-top: 2rem;
         font-size: 1.1rem;
-    }
-    .scroll-down--left{
-        left: 120px;
-    }  
+    } 
     .big-text{
         font-size: 11rem;
         bottom: 10px;
@@ -550,9 +508,7 @@ header{
         width: 14%;
   
     }
-    .scroll-down--left{
-        left: 170px;
-    } 
+
     .text-zone h1::after{
         left: 47em;
     }
