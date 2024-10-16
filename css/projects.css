@@ -47,6 +47,12 @@ body{
 .proj-title .py a:hover{
     color: orange;
 }
+.proj-title .html a:hover{
+    color: #1abdc9;
+}
+.proj-title .cs a:hover{
+    color: #00f531
+}
 #github{
     width: 85%;
     margin:3em  auto;
@@ -73,10 +79,7 @@ body{
         text-align: center;
 
     }
-    #collage-home{
-        width: 70%;
-        margin-left: 15rem;
-    }
+
     .projects{
         margin: 0 0 0 auto;
         flex-flow: row wrap;
