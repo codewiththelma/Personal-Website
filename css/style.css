@@ -197,7 +197,7 @@ header{
 .text-zone h1::before{
     content: '<h1>';
     position: absolute;
-    top: 160px;
+    top: 155px;
     font-size: 1rem;
     font-family: 'La Belle Aurore', cursive;
     color: #666565;
@@ -207,8 +207,8 @@ header{
 .text-zone h1::after{
     content: '</h1>';
     position: absolute;
-    right: 1.5em;
-    padding-top: 2.5em;
+    left: 1.5em;
+    padding-top: 2.8em;
     font-size: 1rem;
     font-family: 'La Belle Aurore', cursive;
     color: #666565;
@@ -234,7 +234,7 @@ header{
     color: pink;
 }
 .text-zone p{
-    margin-top: 30px;
+    margin-top: 60px;
     color: #a2a2a3;
     letter-spacing: 3px;
     font-size: 14px;
@@ -243,7 +243,7 @@ header{
 .text-zone p::before{
     content: '<p>';
     position: absolute;
-    top: -22px;
+    top: -20px;
     font-size: .9rem;
     font-family: 'La Belle Aurore', cursive;
     color: #666565;
@@ -254,7 +254,7 @@ header{
     content: '</p>';
     position: absolute;
     left: 0;
-    padding-top: 1.7em;
+    padding-top: 1.8em;
     font-size: .9rem;
     font-family: 'La Belle Aurore', cursive;
     color: #666565;
