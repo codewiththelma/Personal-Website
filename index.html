@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thelma Ofoegbu's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="icon" href="images/logo1.png" type="image/logo">
 </head>
@@ -118,7 +119,7 @@
         </div>
         <div class="skills-charts">
             <div id="myCanvasContainer">
-                <canvas width="500" height="500" id="myCanvas">
+                <canvas width="450" height="450" id="myCanvas">
                     <ul id="tags">
                         <li><a href="projects.html" target="_blank">HTML</a></li>
                         <li><a href="projects.html" target="_blank">CSS</a></li>
@@ -152,7 +153,7 @@
         </div>
         <div class="text-zone-2">
             <div>
-                <p>This is a small collection of my recent frontend projects, created with HTML, CSS, and JavaScript. I also have backend projects and more to showcase.
+                <p>This is a small collection of my recent projects. But I've got plenty more to show!
                     <br>
                     Interested in seeing additional work? Visit  <a href="projects.html">my portfolio</a> page
                 </p>
@@ -174,51 +175,63 @@
 
     
     <!-- Project collage section -->
-    <div id="collage-home" class="pro-collage">
-            <div class="collage">
-                <div class="collage-item">
-                    <img src="images/calc.png" alt="image">
-                    <a href="https://codewiththelma.github.io/Simple-calculator/" class="colorbox" target="_blank"></a>
+    <section class="section-proj">
+    <div class="projects">
+        <article class="proj-border" style="border-top: 2px solid #1abdc9;">
+            <div class="proj-content">
+                <h4 class="lang-name" style="color:#1abdc9;">HTML, CSS, JavaScript</h4>
+                <div class="proj-title">
+                    <h5 class="html">
+                        <a href="https://codewiththelma.github.io/Todo-list/" target="_blank">
+                            To-Do List
+                        </a>
+                    </h5>
+                </div>
+                <div class="description">
+                    A simple to-do list web app where users can add tasks, mark them as complete, and delete them. Data persists using local storage so tasks are saved even after refreshing the page.
                 </div>
             </div>
-            <div class="collage">
-                <div class="collage-item">
-                    <img src="images/todo.png" alt="image">
-                    <a href="https://codewiththelma.github.io/Todo-list/" class="colorbox" target="_blank"></a>
+        </article>
+        <article class="proj-border" style="border-top: 2px solid #f50057;">
+            <div class="proj-content">
+                <h4 class="lang-name" style="color:#f50057;">JAVA</h4>
+                <div class="proj-title">
+                    <h5>
+                        <a href="https://onlinegdb.com/RQ28sBSJ2" target="_blank">
+                            Shopmate
+                        </a>
+                    </h5>
+                </div>
+                <div class="description">
+                            A Java-based shopping cart system managing skincare, haircare, and fragrance products. It features a prepopulated inventory and supports viewing products, managing the cart, and checking out. Admin access is password-protected with "Admin". The system allows users to add items to the cart, edit quantities, and cancel transactions, showcasing object-oriented principles and interactive user management.
+                    
                 </div>
             </div>
-                <div class="collage">
-                <div class="collage-item">
-                    <img src="images/quotes.png" alt="image">
-                    <a href="https://codewiththelma.github.io/Quotes-generator/" class="colorbox" target="_blank"></a>
+        </article>
+        <article class="proj-border" style="border-top: 2px solid orange;">
+            <div class="proj-content">
+                <h4 class="lang-name" style="color:orange;">PYTHON</h4>
+                <div class="proj-title">
+                    <h5 class="py">
+                        <a href="https://www.online-python.com/hvzsgd4pYt" target="_blank">
+                            Student Grading System
+                        </a>
+                    </h5>
+                </div>
+                <div class="description">
+                    A Python-based student grading system managing student records with IDs, personal details, and module grades. It supports adding, searching, sorting, and removing students, with final grades auto-calculated. Sorting is done via heapsort, and users can view detailed student info through a command-line interface. 
                 </div>
             </div>
-                <div class="collage">
-                <div class="collage-item">
-                    <img src="images/Guess.png" alt="image">
-                    <a href="https://codewiththelma.github.io/How-many-Fingers/" class="colorbox"target="_blank"></a>
-                </div>
-            </div>
-                <div class="collage">
-                <div class="collage-item">
-                    <img src="images/Reaction.png" alt="image">
-                    <a href=" https://codewiththelma.github.io/Reaction-Tester/" class="colorbox"target="_blank"></a>
-                </div>
-            </div>
-                <div class="collage">
-                <div class="collage-item">
-                    <img src="images/csStudent.png" alt="image">
-                    <a href="https://codewiththelma.github.io/Mini-CS-Student-Webpage/index.html" class="colorbox"target="_blank"></a>
-                </div>
-            </div>
-
+        </article>
     </div>
+    </section>
+
 
 
 
     <!-- Contact me section -->
         <form class="contact-form">   
-        </form>
+
 
     <canvas id="canvas"></canvas>
 
