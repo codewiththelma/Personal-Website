@@ -137,12 +137,15 @@ header{
     left: 0;
     background-color: #2d2d2e;
 }
- hr{
-    position: relative;
+.nav-links::after{
+    content: '';
     width: 100%;
-    border: 0.01px solid #2d2d2e;
-    top: -80px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    background-color: #2d2d2e;
 }
+
 /*social icons*/
 .social-icons{
     list-style: none;
@@ -194,7 +197,7 @@ header{
     font-size: 3.3rem;
     line-height: 50px;
 }
-.text-zone h1::before{
+/*.text-zone h1::before{
     content: '<h1>';
     position: absolute;
     top: 155px;
@@ -213,7 +216,7 @@ header{
     font-family: 'La Belle Aurore', cursive;
     color: #666565;
     letter-spacing: 3px;
-}
+}*/
 .text-zone img{
     width: 35px;
     height: 50px;
